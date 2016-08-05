@@ -1,5 +1,5 @@
 #r "Newtonsoft.Json"
-#r "Microsoft.WindowsAzure"
+#r "Microsoft.WindowsAzure.Storage"
 
 #load "../lib/LogItem.csx"
 
