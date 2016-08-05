@@ -1,0 +1,28 @@
+{
+  "bindings": [
+    {
+      "queueName": "exponentialsample",
+      "connection": "AzureWebJobsStorage",
+      "name": "inbound",
+      "type": "queueTrigger",
+      "direction": "in"
+    },
+    {
+      "queueName": "exponentialsample",
+      "connection": "AzureWebJobsStorage",
+      "name": "outbound",
+      "type": "queue",
+      "direction": "out"
+    },
+    {
+      "tableName": "exponentialtelemetry",
+      "partitionKey": "1234",
+      "rowKey": "1234",
+      "connection": "AzureWebJobsStorage",
+      "name": "telemetry",
+      "type": "table",
+      "direction": "out"
+    }
+  ],
+  "disabled": false
+}

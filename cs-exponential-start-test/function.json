@@ -1,0 +1,23 @@
+{
+  "bindings": [
+    {
+      "webHookType": "",
+      "name": "req",
+      "type": "httpTrigger",
+      "direction": "in"
+    },
+    {
+      "name": "res",
+      "type": "http",
+      "direction": "out"
+    },
+    {
+      "queueName": "exponentialsample",
+      "connection": "AzureWebJobsStorage",
+      "name": "queue",
+      "type": "queue",
+      "direction": "out"
+    }
+  ],
+  "disabled": false
+}

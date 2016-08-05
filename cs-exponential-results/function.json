@@ -1,0 +1,26 @@
+{
+  "bindings": [
+    {
+      "webHookType": "",
+      "name": "req",
+      "type": "httpTrigger",
+      "direction": "in"
+    },
+    {
+      "name": "res",
+      "type": "http",
+      "direction": "out"
+    },
+    {
+      "tableName": "exponentialtelemetry",
+      "partitionKey": "null",
+      "take": "10000",
+      "filter": "status eq 'Not Started'",
+      "connection": "AzureWebJobsStorage",
+      "name": "telemetry",
+      "type": "table",
+      "direction": "in"
+    }
+  ],
+  "disabled": false
+}
