@@ -18,7 +18,7 @@ public static Task<HttpResponseMessage> Run(HttpRequestMessage req, ICollector<I
 
     HttpResponseMessage res = null;
     
-    string runId = data?.run_id ?? DateTimeOffset.UtcNow.ToString();
+    string runId = data?.run_id ?? Guid.NewGuid().ToString();
     int multiplier = data?.multiplier ?? 2 ;
     int maxGeneration = data?.max_generation ?? 2;
     
